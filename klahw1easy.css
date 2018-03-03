@@ -1,0 +1,101 @@
+/*HW1 Easy CSS - creating page with float boxes
+using CSS to style boxes and page layout*/
+
+/*Style everything in body: background color, font-size*/
+body{
+    background-color: #777;
+    font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;    /*font-size for all boxes in the body GIVEN*/
+    width: 960px;       /*width of body GIVEN*/
+    height: 500px;      /*inputted to match visual sample provided*/
+}
+
+*{
+    box-sizing: border-box;     /*make all element into border boxes*/
+    text-align: center;         /*text in all boxes will align center*/
+    background-color: #ebebeb;
+    color: #777;              /*font color matches body background color*/
+    width: 495px;               /*box width GIVEN in exercise*/
+}
+
+div{
+    margin: 0 auto 0 auto;      /*center ALL "DIV"s in BODY*/
+}
+
+#header{
+    position: relative;         /*to move Box Header down top of page*/
+    top: 10px;                  /*How much to move header down by -->picture*/
+    padding: 20px;              /*increase padding around header*/
+    margin-bottom: 20px;        /*put line spacing after header*/
+}
+
+#nav{
+    padding: 20px;              /*increase padding around header*/
+    margin-bottom: 15px;        /*put line spacing after header*/
+}
+
+.sectionwrap{
+    margin: 0 auto 0 auto;      /*to center all boxes in section wrap*/
+}
+
+#section{
+    padding-top: 20px;          /*to move word "section" down from the top of box*/
+    width: 300px;               
+    height: 225px;
+    float: left;
+    margin-right:15px;
+}
+
+#article{
+    clear: both;                /*to clear float*/
+    overflow: auto;             /*to clear float*/
+
+    position: relative;         /*to move Box Article down*/
+    top: 10px;                  /*How much to move Box Article down by -->picture*/
+
+    background-color: #777;     /*to give article BODY's background color*/
+    color: #ebebeb;             /*to give article font Section background color*/
+
+    padding-top: 20px;          /*to move word "article" down from the top of box*/
+    width: 275px;
+    height: 170px;
+    margin: 0 auto 0 auto;      /*to center box Article within box Section*/
+}
+
+.articlecontents{
+    margin: 0 auto 0 auto;      /*to center all boxes in CLASS section wrap*/
+}
+
+#h123{
+    margin: 0 auto 0 auto;      /*to center box h123 within box Article*/
+    position: relative;         /*to move Box h123 down*/
+    top: 20px;                  /*How much to move Box h123 down by -->picture*/
+
+    width: 240px;
+    padding: 15px;
+    margin-bottom: 10px;        /*to push box p down*/
+    font-weight: bold;          /*to make font bold like picture*/
+}
+
+#p{
+    margin: 0 auto 0 auto;      /*to center box p within box Article*/
+    position: relative;         /*to move Box p down*/
+    top: 15px;                  /*How much to move Box p down by -->picture*/
+
+    width: 240px;
+    padding: 15px;
+}
+
+#aside{
+    float: left;
+    width: 180px;               /*to allign edge calculated width used*/
+    padding-top: 20px;          /*to move word "aside" down from the top of box*/
+    height: 225px;              
+    margin-bottom: 15px;
+}
+
+#footer{
+    clear: both;                /*to clear float used*/
+    overflow: auto;             /*to clear float used*/
+    padding: 20px;
+}
